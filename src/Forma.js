@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import shortid from "shortid";
-
+import classes from "./App.css"
 
 export default class Forma extends Component {
 
@@ -29,8 +29,8 @@ export default class Forma extends Component {
     render() {
         return (
             <form onSubmit={this.actualizacion}>
-                <input name="text" value={this.state.text} onChange={this.cambio}/>
-                <button onClick={this.actualizacion}>Agregar Tarea</button>
+                <input className = {classes.entradaText} name="text" value={this.state.text} onChange={this.cambio}/>
+                <button className = {classes.botonAccion} onClick={this.actualizacion}>Agregar Tarea</button>
             </form>
         );
     }

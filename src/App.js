@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import './App.css';
 import TareasList from "./Tareas";
+import classes from "./App.css"
 
 
 class App extends Component {
@@ -22,10 +22,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className={classes.cuerpo}>
         <TareasList />
       </div>
-    );
+    )
   }
 }
 

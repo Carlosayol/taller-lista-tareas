@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Forma from './Forma';
 import Check from "./Check";
+import classes from './App.css';
 
 export default class Tareas extends Component {
 
@@ -45,15 +46,15 @@ export default class Tareas extends Component {
 
     render() {
         return (
-        <div className="comptext">
-            <div>Lista de Tareas</div>
+        <div >
+            <div className = {classes.heading}>Lista de Tareas</div>
             <Forma onSubmit={this.agregarTarea} />
             {this.state.checks.map(tarea => (<Check  key={tarea.id}
             completar= {() => this.completar(tarea.id)} 
             borrar = {() => this.borrarTarea(tarea.id)}
             tarea = {tarea} />))}
             <div>
-                <button onClick={this.borrarCompletas}
+                <button className = {classes.botonAccion} onClick={this.borrarCompletas}
                 >Borrar Tareas Completas</button>
             </div>
         </div>

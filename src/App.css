@@ -38,3 +38,75 @@
   }
 }
 
+.cuerpo {
+  margin: 5%;
+  text-align: center;
+  font-size: 36px;
+}
+
+
+.botonAccion {
+  box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color:#599bb3;
+  border-color: #599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+  margin: 20px 0px 10px;
+}
+
+.entradaText {
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+  padding:13px 15px;  
+  margin: 30px;
+  border-radius: 8px;
+}
+
+.heading {
+  margin: 40px;
+  font-weight: bold;
+}
+
+.botonBorrar{
+  backface-visibility: hidden;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  background: #599bb3;
+  border-radius: 100px;
+  border-color: #599bb3;
+	text-shadow:0px 1px 0px black;
+  color: #000;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: 900;
+  font-style: normal;
+  margin: 0px 25px 0px;
+  vertical-align: top;
+}
+
+.checkmark {
+  height: 25px;
+  display: inline-block;
+  width: 25px;
+  margin: auto 25px auto;
+  background-color: #eee;
+  vertical-align: middle;
+}
+
+.contenedorText {
+  display: flex;
+  justify-content: center;
+}
